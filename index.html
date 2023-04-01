@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-16">
+    <meta NAME="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Changes the browsers title bar-->
+    <title>
+        <Momore's Portfolio>
+    </title>
+    <!-- Icon at the top of the browser -->
+    <link rel="icon" type="image/x-icon" href="Images/m.jpg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc= " crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/7799a5c863.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@900&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <!-- My CSS Style Sheet -->
+   <!-- <link rel="stylesheet" href="portfolio.css"> -->
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- My javascript
+    <script src="portfolio.js"></script> -->
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- <img src="Images/MyFace.jpg" alt=""> -->
+        </div>
+        <!-- <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button> -->
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#project" class="nav__link"><i
+                            class="fa-sharp fa-solid fa-code"></i></i>&nbsp; Projects</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link"><i
+                            class="fa-solid fa-screwdriver-wrench"></i></i>&nbsp; Skills</a>
+                </li>
+                <li class="nav__item"><a href="#education" class="nav__link"><i
+                            class="fa-solid fa-user-graduate"></i></i>&nbsp; Education</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link"><i class="fa-solid fa-envelope"></i> &nbsp;
+                        Contact
+                        Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Introduction-->
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            <center>Hi, I'm <span class="color__name">Momore</span></center>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">I'm a Computer Science student at
+            <a href="https://www.qu.edu/" class="green--link--underline" target="_blank">
+                Quinnipiac University.
+            </a>
+            I spend my day-to-day improving my programming skills by developing projects.
+        </p>
+        <img src="Images/MyFace.jpg" alt="My picture" width="350" height="250" class="intro__img">
+    </section>
+
+    <!-- My Projects -->
+    <section class="projects" id="project">
+        <h2 class="section__title section__title--work">My <span class="color__name--projects">Projects</span></h2>
+        <div class="portfolio">
+            <!-- Portfolio Image1 -->
+            <img src="Images/fourInARow.png" alt="Picture of a connect four game" class="portfolio__img" width = "450"
+                height="300">
+            <div class="project_dets">
+                <h2>Four-In-A-Row Game</h2>
+                <div class="aligned">
+                    <span>Made With:</span>
+                    <img src="Images/kotlin.png" alt="kotlin's Logo" class="game__img" width="50" height="30">
+                    <img src="Images/xml.png" alt="xml's Logo" class="game__img" width="50" height="30">
+                </div>
+                <p>Developed a Four In A Row Android app using Android Studio, Kotlin and XML and implemented a user-friendly UI with intuitive navigation and game controls, utilizing Material Design Principles.
+                    This app has been optimized for different screen sizes and devices and tested to ensure stability and performance.
+                    <br>
+                    <br>
+                    <a href="https://github.com/Ajifolahan/Four-In-A-Row-Game" class="btn--git" target="_blank">
+                        Code
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="portfolio">
+            <!-- Portfolio Image1 -->
+            <img src="Images/game.png" alt="Picture of my Platformer game" class="portfolio__img" width = "450"
+                height="300">
+            <div class="project_dets">
+                <h2>Platformer Game</h2>
+                <div class="aligned">
+                    <span>Made With:</span>
+                    <img src="Images/Java-Logo.png" alt="Java's Logo" class="game__img" width="50" height="30">
+                </div>
+                <p> Worked with a five-man team to develop a multi-level platformer game in Java. There
+                    is a goal at the end of the game and each level contains
+                    various themes to keep the player interested. Used Github for version control and
+                    agile methodology for project management.
+                    <br>
+                    <br>
+                    <a href="https://github.com/Ajifolahan/SER225_Platformer" class="btn--git" target="_blank">
+                        Code
+                    </a>
+                    <a href="https://a-r-t.github.io/SER225-Project-Website/semesters/fall2022/teams/cosmic-cats"
+                        class="btn--gits" target="_blank">
+                        Documentation
+                    </a>
+                </p>
+            </div>
+        </div>
+
+           <div class="portfolio">
+            <!-- Portfolio Image1 -->
+            <img src="Images/R-data-Analysis.png" alt="Picture of data" class="portfolio__img" width = "450"
+                height="300">
+            <div class="project_dets">
+                <h2>Data Analysis</h2>
+                <div class="aligned">
+                    <span>Made With:</span>
+                    <img src="Images/R-Logo.png" alt="R's Logo" class="game__img" width="50" height="30">
+                </div>
+                <p> Used R programming langauge to statistically analyze LONGSCAN data. I analyzed data to see if there is a correlation
+                    between between young criminal charges and children who grew up in a drug violent neighborhood.
+                    I discovered that these two had no relationship to one another. To perform my analysis I used regression analysis, 
+                    p test and also controlled for various factors(in order to isolate my analysis). The link below provides 
+                    a more detailed statistics analysis.
+                    <br>
+                    <br>
+                    <a href="https://github.com/Ajifolahan/LONGSCANDataAnalysis" class="btn--git" target="_blank">
+                        Code
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="portfolio">
+            <!-- Portfolio Image2 -->
+            <img src="Images/TicTacToe.png" alt="Picture of my TicTacToe game" class="portfolio__img" width = "450"
+                height="300">
+            <div class="project_dets">
+                <h2>Tic-Tac-Toe Game</h2>
+                <div class="aligned">
+                    <span>Made With:</span>
+                    <img src="Images/Java-Logo.png" alt="Java's Logo" class="game__img" width="50" height="30">
+                </div>
+                <p> Developed a functioning graphical Tic-tac-toe game. Used Java Swing to create the GUI.
+                    <br>
+                    <br>
+                    <a href="https://github.com/Ajifolahan/TicTacToe" class="btn--git" target="_blank">
+                        Code
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="portfolio">
+            <!-- Portfolio Image3-->
+            <img src="Images/Food.png" alt="Picture of a food ordering app" class="portfolio__img" width = "450"
+                height="300">
+            <div class="project_dets">
+                <h2>Quinnipiac Mobile App Simulation</h2>
+                <div class="aligned">
+                    <span>Made With:</span>
+                    <img src="Images/Java-Logo.png" alt="Java's Logo" class="game__img" width="50" height="30">
+                </div>
+                <p> Collaborated with someone to create a simulated version of Quinnipiac's mobile dining ordering
+                    system.
+                    Implemented an ArrayList from Scratch using arrays. Used this ArrayList to add various Foods to the
+                    program.
+                    Implemented a Queue Data Strucuture using Linked List. Used the Queue to simulate a real-life
+                    restaurant Queue.
+                    <br>
+                    <br>
+                    <a href="https://github.com/Ajifolahan/MobileOrderSimulation" class="btn--git" target="_blank">
+                        Code
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Technical Skills -->
+    <section class="tech__skills" id="skills">
+        <h2 class="section__title section__title--skills"> Technical <span class="color__name--projects">Skills</span>
+        </h2>
+
+        <div class="skills__img">
+
+            <img src="Images/Java-Logo.png" alt="Java's Logo" class="coding__img" width="150" height="100">
+            <img src="Images/Scala-Logo.png" alt="Scala's Logo" class="coding__img" width="150" height="100">
+            <img src="Images/R-Logo.png" alt="R's Logo" class="coding__img" width="150" height="100">
+            <img src="Images/Html-Logo.webp" alt="Html's Logo" class="coding__img" width="150" height="100">
+            <img src="Images/Css-Logo.webp" alt="Css's Logo" class="coding__img" width="150" height="100">
+            <img src="Images/Sql-Logo.png" alt="Sql's Logo" class="coding__img" width="150" height="100">
+            <img src="Images/git-logo.png" alt="Git's Logo" class="coding__img" width="150" height="100">
+            <img src="Images/kotlin.png" alt="Kotlin's Logo" class="coding__img" width="150" height="100">
+            <img src="Images/xml.png" alt="XML's Logo" class="coding__img" width="150" height="100">
+
+        </div>
+        <a href="https://drive.google.com/file/d/1_STQIsWokpbV_-HERbhGSVYdBxjUxyp8/view?usp=sharing" class="btn"
+            target="_blank">
+            See My Resume
+        </a>
+    </section>
+
+    <!-- Education -->
+    <section class="education" id="education">
+        <h2 class="section__title section__title--education"> My <span class="color__name--education">Education</span>
+        </h2>
+        <div class="about__education">
+            <div class="education__image">
+                <img src="Images/QuinnipiacUniversity.png" alt="Quinnipiac University's Logo" class="qu__img"
+                    width="200" height="200">
+            </div>
+            <div class="education__details">
+                <h4 class="education-year">Expected May 2024</h4>
+                <h4>Quinnipiac University</h4>
+                <p>GPA 3.871/4</p>
+                <ul>
+                    <li>Major in Computer Science</li>
+                    <li>Minor in Applied Statistics and Data Science</li>
+                    <li>3x Quinnipiac University Dean's List</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <a href="mailto:maayinde@quinnipiac.edu" class="footer__link">maayinde@quinnipiac.edu</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link"
+                    href="http://www.linkedin.com/in/MomoreoluwaAyinde" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com/Ajifolahan"
+                    target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
