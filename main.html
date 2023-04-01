@@ -17,34 +17,54 @@
         integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel = "stylesheet" href="main.css">
 </head>
 
 <body>
-    <header>
-        <div class="logo"></div>
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="#location" class="nav__link">&nbsp;Time by Location</a></li>
-                <li class="nav__item"><a href="#IP" class="nav__link">&nbsp; Time by Specific IP</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <p>
-
-    </p>
-
     <button type="button" onclick="getTime()">Click me to get the time at your IP address</button>
     <div id="result"></div>
     <div id="result1"></div>
     <div id="result2"></div>
     <div id="result3"></div>
     <div id="result4"></div>
+
+    <h1>What do you want to do?</h1>
+	<input type="text" id="activity-input">
+	<br>
+	<h1>When do you want to do it?</h1>
+	<input type="time" id="time-input">
+	<br>
     <div id="result5"></div>
+	<button id="set-alarm">Set Alarm</button>
+    
 
+   <script>
+        $(document).ready(function() {
+            $("#set-alarm").click(function() {
+                alert("Alarm set");
+                var activity = $("#activity-input").val();
+                var time = $("#time-input").val();
+    
+                if (activity !== "" && time !== "") {
+                    var now = new Date();
+                    var alarmTime = new Date(now.toDateString() + " " + time);
+    
+                    if (alarmTime <= now) {
+                        alarmTime.setDate(alarmTime.getDate() + 1);
+                    }
+    
+                    var timeUntilAlarm = alarmTime.getTime() - now.getTime();
+    
+                    setTimeout(function() {
+                        alert("Time to " + activity + "!");
+                        var msg = new SpeechSynthesisUtterance("Time to " + activity + "fucker !");
+                        window.speechSynthesis.speak(msg);
+                    }, timeUntilAlarm);
+                }
+            });
+        });
+    </script>
 </body>
-
 </html
-
-
 
