@@ -2,52 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-16">
-    <meta NAME="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Changes the browsers title bar-->
-    <title>
-        <Hackathon2023>
-    </title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon2023</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc= " crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/7799a5c863.js" crossorigin="anonymous"></script>
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@900&family=Roboto&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@900&family=Roboto&display=swap"
         rel="stylesheet">
-
-    <!-- My CSS Style Sheet -->
-   <!-- <link rel="stylesheet" href="portfolio.css"> -->
-    <!-- Animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- My javascript -->
     <script src="main.js"></script>
 </head>
 
 <body>
     <header>
-            <div class="logo">
-            </div>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#location" class="nav__link"></i>&nbsp;Time by Location</a></li>
-                    <li class="nav__item"><a href="#IP" class="nav__link"></i>&nbsp; Time by Specific IP</a>
-                    </li>
-                </ul>
+        <div class="logo"></div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#location" class="nav__link">&nbsp;Time by Location</a></li>
+                <li class="nav__item"><a href="#IP" class="nav__link">&nbsp; Time by Specific IP</a></li>
+            </ul>
+        </nav>
     </header>
 
     <p>
-        Location: <input id = "city"></input>
-        Area: <input id = "area"></input>
+
     </p>
 
-    <button type="button" onclick="getTime()">Get Time</button>
+    <button type="button" onclick="getTime()">Click me to get the time at your IP address</button>
     <div id="result"></div>
 </body>
+
+</html
+
+
+
