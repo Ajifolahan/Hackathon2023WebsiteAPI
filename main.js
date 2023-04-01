@@ -2,7 +2,7 @@ function getTime() {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '2c1aa69a2cmsh459677a0cc807a5p1c8204jsn71a2effba083',
+            'X-RapidAPI-Key': '2c1aa69a2cmsh459677a0cc807a5p1c8204jsn71a2effba083' ,
             'X-RapidAPI-Host': 'world-time2.p.rapidapi.com'
         }
     };
